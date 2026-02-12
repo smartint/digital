@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Snipets: Relatos y Cuentos</title>
+  <style>
+    :root{
+      --text:#111827;
+      --border:#e5e7eb;
+      --bg:#ffffff;
+      --link:#0969da;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:var(--sans);color:var(--text);background:var(--bg);line-height:1.45}
+
+    /* FULL WIDTH */
+    .wrap{
+      width:100%;
+      max-width:none;
+      margin:0;
+      padding:22px 16px 40px;
+    }
+
+    h1{margin:0 0 16px;font-size:32px;line-height:1.2;font-weight:800;letter-spacing:-.02em}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    /* 4 por fila, ocupando todo el ancho */
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap:12px;
+      width:100%;
+    }
+    @media (max-width: 980px){ .grid{grid-template-columns: repeat(3, 1fr);} }
+    @media (max-width: 720px){ .grid{grid-template-columns: repeat(2, 1fr);} }
+    @media (max-width: 480px){ .grid{grid-template-columns: 1fr;} }
+
+    .gitem{
+      margin:0;
+      border:1px solid var(--border);
+      border-radius:10px;
+      overflow:hidden;
+      background:#fff;
+    }
+    .thumb{
+      aspect-ratio: 4 / 3;
+      background:#f3f4f6;
+      border-bottom:1px solid var(--border);
+      overflow:hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .thumb img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .imglink{
+      display:flex;align-items:center;justify-content:center;width:100%;height:100%;
+    }
+    .cap{
+      padding:10px 10px 12px;
+      font-size:13px;
+      text-align:center;
+      word-break: break-word;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Snipets: Relatos y Cuentos</h1>
+    <section class="grid">
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-museo/" target="_blank" rel="noopener"><img src="01.jpg" alt="Una noche en el museo" loading="lazy"></a></div>
+                <figcaption class="cap">Una noche en el museo</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-grancanaria/" target="_blank" rel="noopener"><img src="02.jpg" alt="Viaje por Gran Canaria" loading="lazy"></a></div>
+                <figcaption class="cap">Viaje por Gran Canaria</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-cuentosficcion/" target="_blank" rel="noopener"><img src="03.jpg" alt="Cuentos de ciencia ficción" loading="lazy"></a></div>
+                <figcaption class="cap">Cuentos de ciencia ficción</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://bitacora.top/digital/cuentos-de-navidad/" target="_blank" rel="noopener"><img src="04.jpg" alt="Cuentos de navidad" loading="lazy"></a></div>
+                <figcaption class="cap">Cuentos de navidad</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://bitacora.top/celebraciones/" target="_blank" rel="noopener"><img src="05.jpg" alt="Celebraciones" loading="lazy"></a></div>
+                <figcaption class="cap">Celebraciones</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://bitacora.top/bpg/" target="_blank" rel="noopener"><img src="06.jpg" alt="Leyendo a Galdós" loading="lazy"></a></div>
+                <figcaption class="cap">Leyendo a Galdós</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-11anos/" target="_blank" rel="noopener"><img src="07.jpg" alt="Un día en la vida de un niño de 11 años" loading="lazy"></a></div>
+                <figcaption class="cap">Un día en la vida de un niño de 11 años</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://bitacora.top/africa/" target="_blank" rel="noopener"><img src="08.jpg" alt="Un viaje por África" loading="lazy"></a></div>
+                <figcaption class="cap">Un viaje por África</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-polonorte/" target="_blank" rel="noopener"><img src="09.jpg" alt="Viaje al Polo Norte" loading="lazy"></a></div>
+                <figcaption class="cap">Viaje al Polo Norte</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-universo/" target="_blank" rel="noopener"><img src="10.jpg" alt="Relatos sobre el Universo" loading="lazy"></a></div>
+                <figcaption class="cap">Relatos sobre el Universo</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-avion/" target="_blank" rel="noopener"><img src="11.jpg" alt="Viaje en avión" loading="lazy"></a></div>
+                <figcaption class="cap">Viaje en avión</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-interrail/" target="_blank" rel="noopener"><img src="12.jpg" alt="Viaje por Europa (Interrail)" loading="lazy"></a></div>
+                <figcaption class="cap">Viaje por Europa (Interrail)</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-civilizaciones/" target="_blank" rel="noopener"><img src="13.jpg" alt="Civilizaciones antiguas" loading="lazy"></a></div>
+                <figcaption class="cap">Civilizaciones antiguas</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-siglooro/" target="_blank" rel="noopener"><img src="14.jpg" alt="Relatos del Siglo de Oro español" loading="lazy"></a></div>
+                <figcaption class="cap">Relatos del Siglo de Oro español</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-mitologicos/" target="_blank" rel="noopener"><img src="15.jpg" alt="Relatos mitológicos" loading="lazy"></a></div>
+                <figcaption class="cap">Relatos mitológicos</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-conflictos/" target="_blank" rel="noopener"><img src="16.jpg" alt="Conflictos internacionales" loading="lazy"></a></div>
+                <figcaption class="cap">Conflictos internacionales</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-calle/" target="_blank" rel="noopener"><img src="17.jpg" alt="Durmiendo en la calle" loading="lazy"></a></div>
+                <figcaption class="cap">Durmiendo en la calle</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://bitacora.top/digital/juegos-antiguos-2/" target="_blank" rel="noopener"><img src="18.jpg" alt="Juegos antiguos" loading="lazy"></a></div>
+                <figcaption class="cap">Juegos antiguos</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-musicos/" target="_blank" rel="noopener"><img src="19.jpg" alt="Músicos clásicos" loading="lazy"></a></div>
+                <figcaption class="cap">Músicos clásicos</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-escritores/" target="_blank" rel="noopener"><img src="20.jpg" alt="Escritores contemporáneos" loading="lazy"></a></div>
+                <figcaption class="cap">Escritores contemporáneos</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://bitacora.top/digital/juegos-antiguos/" target="_blank" rel="noopener"><img src="21.jpg" alt="Qué quiero ser de mayor" loading="lazy"></a></div>
+                <figcaption class="cap">Qué quiero ser de mayor</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-saladeespera/" target="_blank" rel="noopener"><img src="22.jpg" alt="Sala de espera" loading="lazy"></a></div>
+                <figcaption class="cap">Sala de espera</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://bitacora.top/digital/viaje-en-crucero/" target="_blank" rel="noopener"><img src="23.jpg" alt="Viaje en crucero" loading="lazy"></a></div>
+                <figcaption class="cap">Viaje en crucero</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://bitacora.top/digital/navegando-el-mar-de-las-emociones/" target="_blank" rel="noopener"><img src="24.jpg" alt="El mar de las emociones" loading="lazy"></a></div>
+                <figcaption class="cap">El mar de las emociones</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-habitos/" target="_blank" rel="noopener"><img src="25.jpg" alt="Hábitos saludables" loading="lazy"></a></div>
+                <figcaption class="cap">Hábitos saludables</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-cuentos/" target="_blank" rel="noopener"><img src="26.jpg" alt="Cuentos clásicos" loading="lazy"></a></div>
+                <figcaption class="cap">Cuentos clásicos</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-espana/" target="_blank" rel="noopener"><img src="27.jpg" alt="Viaje por España" loading="lazy"></a></div>
+                <figcaption class="cap">Viaje por España</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://smartint.github.io/digital-muerte/" target="_blank" rel="noopener"><img src="28.jpg" alt="Experiencias cercanas a la muerte" loading="lazy"></a></div>
+                <figcaption class="cap">Experiencias cercanas a la muerte</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><a class="imglink" href="https://bitacora.top/digital/wp-content/uploads/2025/03/01-768x439.webp" target="_blank" rel="noopener"><img src="29.jpg" alt="Viaje por Latioamérica" loading="lazy"></a></div>
+                <figcaption class="cap">Viaje por Latioamérica</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><img src="30.jpg" alt="Relatos de terraformación" loading="lazy"></div>
+                <figcaption class="cap">Relatos de terraformación</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><img src="31.jpg" alt="Relatos sobre ciudades submarinas" loading="lazy"></div>
+                <figcaption class="cap">Relatos sobre ciudades submarinas</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><img src="32.jpg" alt="Historias de mis abuelos" loading="lazy"></div>
+                <figcaption class="cap">Historias de mis abuelos</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><img src="33.jpg" alt="Especies en peligro de extinción" loading="lazy"></div>
+                <figcaption class="cap">Especies en peligro de extinción</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><img src="34.jpg" alt="Las aventuras de Zokete" loading="lazy"></div>
+                <figcaption class="cap">Las aventuras de Zokete</figcaption>
+              </figure>
+      <figure class="gitem">
+                <div class="thumb"><img src="35.jpg" alt="Relatos STEAM" loading="lazy"></div>
+                <figcaption class="cap">Relatos STEAM</figcaption>
+              </figure>
+    </section>
+  </div>
+</body>
+</html>
